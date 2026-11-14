@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale.0">
+        <tritle>Nhork sreynit form.html</tritle> 
+        <link rel="stylesheet"href="style.css">
+    </head>
+    <body>
+        <div class="container">
+        <h1>Form</h1>
+        <form action="submit.php"method="POST">
+            <label for="name">Name:   </label>
+            <input type="text" id="name" name="name" placeholder="Enter your name"required>
+            <br>
+
+            <lable for="email">Email:   </lable>
+            <input type="email" id="email"name="email"placeholder="Enter your email"required>
+            <br>
+            <lable for="pwd">Password:</lable>
+            <input type="password" id="pwd"name="pwd"placeholder="Enter your password"required>
+            <br>
+            <lable for="birth date">Birth date:</lable>
+            <input type="date" id="birthdate"name="birthdate"placeholder="Enter your birthdate"required>
+            <br>
+            <label for="datemin">Enter a date after 2000-01-01</label>
+            <input type="date" id="datemin"name="datemin"min="2000-01-01"> <br>
+
+            <label for="datemax">Enter a date before 1990-01-01</label>
+            <input type="date" id="datemax"name="datemax"min="1989-12-31"> <br>
+
+            <label for="message">message:</label>
+            <textarea id="messege" name="messege"placeholder="Enter your messege"required></textarea>
+            <br>
+
+            <p><b>Choose your favorite Web Language:</b></p>
+            <fieldset>
+                <input type="radio"id="html" name="fav_language"value="HTML">
+                <label for="HTML">html</label>
+                <input type="radio"id="CSS" name="fav_language"value="CSS">
+                <label for="CSS">CSS</label>
+                <input type="radio"id="javascript" name="fav_language"value="javascript">
+                <label for="javascript">javascript</label>
+                <input type="radio"id="Web" name="fav_language"value="Web">
+                <label for="Web">Web Development</label>
+                <input type="radio"id="database" name="fav_language"value="Database">
+                <label for="database">Database</label>
+            </fieldset>
+            <br>
+            <p>The <strong>input type="checkbox"</strong>defines a checkbox:</p>
+            <fieldset>
+                <input type="checkbox" id="vehicle1"name="vehicle1"value="Bike">
+                <label for="vehicle1">I have a bike</label><br>
+                <input type="checkbox" id="vehicle2"name="vehicle2"value="Car">
+                <label for="vehicle2">I have a car</label><br>
+                <input type="checkbox" id="vehicle3"name="vehicle3"value="Boat">
+                <label for="vehicle3">I have a boat</label><br>
+            </fieldset>
+            <br>
+            <p><b>The select element defines a drop-down list:</b></p>
+            <fieldset>
+                <label for="cars">Choose a car:</label>
+                <select id="cars"name="cars">
+                    <option value=""></option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </fieldset>
+            <br>
+            <p><b>The datalist element spesilist a list of pre-defined options for an input element.</b>
+            </p>
+            <input list="browsers"name="browsers">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <br><br><br><br>
+
+            
+
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+    </body>
+</html>
