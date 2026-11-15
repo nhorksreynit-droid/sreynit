@@ -1,90 +1,454 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inital-scale.0">
-        <tritle>Nhork sreynit form.html</tritle> 
-        <link rel="stylesheet"href="style.css">
-    </head>
-    <body>
-        <div class="container">
-        <h1>Form</h1>
-        <form action="submit.php"method="POST">
-            <label for="name">Name:   </label>
-            <input type="text" id="name" name="name" placeholder="Enter your name"required>
-            <br>
+<html lang="en"
+<head>
+  <link rel="stylesheet" href="fruit.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale.0">
+    <tritle>Nhork sreynit.html</tritle>  
+    <style>
+      table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         padding: 8px;
+      }
+    </style>
+    <style>
+  img {
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 200px;
+    height: 200px;  
+  }
+  </style>
+  
+<style> 
+div
+ #Animation {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;  
+}
 
-            <lable for="email">Email:   </lable>
-            <input type="email" id="email"name="email"placeholder="Enter your email"required>
-            <br>
-            <lable for="pwd">Password:</lable>
-            <input type="password" id="pwd"name="pwd"placeholder="Enter your password"required>
-            <br>
-            <lable for="birth date">Birth date:</lable>
-            <input type="date" id="birthdate"name="birthdate"placeholder="Enter your birthdate"required>
-            <br>
-            <label for="datemin">Enter a date after 2000-01-01</label>
-            <input type="date" id="datemin"name="datemin"min="2000-01-01"> <br>
+@keyframes myAnimation {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:rgb(12, 236, 12); left:0px; top:200px;}
+  100% {background-color:rgb(229, 34, 131); left:0px; top:0px;}
+}
+</style>
+<style> 
+   div
+   #hover {
+     width: 100px;
+     height: 100px;
+     background-color: rgb(241, 60, 166);
+     /*transition: width 2s;*/
+     /*transition: all 300ms ease-in-out 100ms;*/
+     transition-property: width;
+     transition-duration: 2s;
+     transition-timing-function: linear;
+     transition-delay: 2s;
+   }
 
-            <label for="datemax">Enter a date before 1990-01-01</label>
-            <input type="date" id="datemax"name="datemax"min="1989-12-31"> <br>
+   div:hover {
+     width: 600px;
+   }
 
-            <label for="message">message:</label>
-            <textarea id="messege" name="messege"placeholder="Enter your messege"required></textarea>
-            <br>
 
-            <p><b>Choose your favorite Web Language:</b></p>
-            <fieldset>
-                <input type="radio"id="html" name="fav_language"value="HTML">
-                <label for="HTML">html</label>
-                <input type="radio"id="CSS" name="fav_language"value="CSS">
-                <label for="CSS">CSS</label>
-                <input type="radio"id="javascript" name="fav_language"value="javascript">
-                <label for="javascript">javascript</label>
-                <input type="radio"id="Web" name="fav_language"value="Web">
-                <label for="Web">Web Development</label>
-                <input type="radio"id="database" name="fav_language"value="Database">
-                <label for="database">Database</label>
-            </fieldset>
-            <br>
-            <p>The <strong>input type="checkbox"</strong>defines a checkbox:</p>
-            <fieldset>
-                <input type="checkbox" id="vehicle1"name="vehicle1"value="Bike">
-                <label for="vehicle1">I have a bike</label><br>
-                <input type="checkbox" id="vehicle2"name="vehicle2"value="Car">
-                <label for="vehicle2">I have a car</label><br>
-                <input type="checkbox" id="vehicle3"name="vehicle3"value="Boat">
-                <label for="vehicle3">I have a boat</label><br>
-            </fieldset>
-            <br>
-            <p><b>The select element defines a drop-down list:</b></p>
-            <fieldset>
-                <label for="cars">Choose a car:</label>
-                <select id="cars"name="cars">
-                    <option value=""></option>
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
-                </select>
-            </fieldset>
-            <br>
-            <p><b>The datalist element spesilist a list of pre-defined options for an input element.</b>
-            </p>
-            <input list="browsers"name="browsers">
-            <datalist id="browsers">
-                <option value="Edge">
-                <option value="Firefox">
-                <option value="Chrome">
-                <option value="Opera">
-                <option value="Safari">
-            </datalist>
-            <br><br><br><br>
+   #cubic {
+     width: 100px;
+     height: 100px;
+     background-color: rgb(230, 240, 42);
+     transition: width 1s, height 1s, background-color 1s, transform 1s;
+   }
 
-            
+   #cubic:hover {
+     width: 300px;
+     height: 300px;
+     background-color: rgb(236, 100, 54);  
+     transform: rotate(360deg);
+   }
+   </style>
+   <title>Sweet fruits</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta charset="UTF-8">
+  <!-- Add this line for Responsive page -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <button type="submit">Submit</button>
-        </form>
-        </div>
-    </body>
-</html>
+      <!-- Add this line for an .ico file -->
+   <link rel="icon" type="image/x-icon" href="aub.png">
+
+   <style> 
+   div #myDiv{
+     width: 150px;
+     height: 150px;
+     background-color: yellow;
+     border: 1px solid black;
+     box-shadow: 5px 10px #888888;
+     /*transform: translate(50px,100px);*/
+     /*transform: rotate(20deg);*/
+     /*transform: rotate(-20deg);*/
+     /*transform: scale(1,2);*/
+     /*transform: scaleX(2);*/
+     /*transform: scaleY(0.5);*/
+     /*transform: skewX(20deg);*/
+
+   }
+
+    #myDiv { width: auto;
+        /*transform: translate(50px,100px);*/
+        /* transform: rotate(20deg); */
+        /*transform: rotate(-20deg);*/
+        /* transform: scale(1,2); */
+        /*transform: scaleX(2);*/
+        /*transform: scaleY(0.5);*/
+        /* transform: skewX(20deg); */
+        /*transform: skew(20deg,10deg);*/
+      }
+   </style>
+
+   <style>
+   .container {
+     width: 180px;
+     height: 180px;
+     border: 1px solid rgb(52, 220, 6);
+     margin: 30px;
+     perspective: 600px;
+   }
+
+   .box {
+     width: 100%;
+     height: 100%;
+     background-color: green;
+     line-height: 180px;
+     text-align: center;
+     font-size: 20px;
+     /*transform: rotateX(45deg);*/
+     /*transform: rotateY(45deg);*/
+     /*transform: rotateZ(45deg);*/
+     transform: translateZ(-100px);
+   }
+   </style>
+
+    
+</head>
+<body>
+    <h1 style="color: rgb(19, 209, 9);">WELCOME TO FRESH FRUIT SHOP</h1>
+   
+
+    <P style="color: rgb(225, 11, 11);">For Pchom Ben festival, Fresh Fruit shop are offering discount to customer with fresh khmer fruits from the field directly in Mondulkiri province, good quality and health care.
+ </P>
+    
+ <hr>
+   
+    <div>
+     <h2 style="background-color:gold">List of fruit in the shop</h2>
+
+     <ul>
+         <li>Apple</li>
+         <li>Avocado</li>
+         <li>Banana</li>
+         <li>Blueberry</li>
+         <li>Durain</li>
+         <li>Jackfruit</li>
+         <li>Orange</li>
+         <li>Papaya</li>
+         <li>Strawberry</li>
+         <li>Watermelon</li>
+     </ul>
+    </div>
+    <h1 style="color: rgb(9, 205, 29);">Promotion in Pchum Ben Day</h1>
+    <h2 style="color: red;">Discount5%-10% all</h2>
+     <table>
+         <tr style="background-color: red;">
+           <th>FRUIT NAME</th>
+           <th> DISTCOUNT</th>
+           <th>PRICE AFTER PROMOTION</th>
+       </tr>
+        <tr>
+           <td>Apple</td>
+           <td>-10%</td>
+           <td>1kg=2.7$</td>
+        </tr>
+        <tr>
+           <td>Avocado</td>
+           <td>-6%</td>
+           <td>1kg=1.90$</td>
+        </tr>
+         <tr>
+           <td>Banana</td>
+           <td>-10%</td>
+           <td>1kg=1$</td>
+        </tr>
+         <tr>
+           <td>Blueberry</td>
+           <td>-5%</td>
+           <td>1kg=23$</td>
+        </tr>
+         <tr>
+           <td>Durain</td>
+           <td>-8%</td>
+           <td>1kg=4.5$</td>
+        </tr>
+         <tr>
+           <td>Jackfruit</td>
+           <td>-5%</td>
+           <td>1kg=4$</td>
+        </tr>
+         <tr>
+           <td>Orange</td>
+           <td>-7.5%</td>
+           <td>1kg=3.5$</td>
+        </tr>
+         <tr>
+           <td>Papaya</td>
+           <td>-10%</td>
+           <td>1kg=0.9$</td>
+        </tr>
+         <tr>
+           <td>Strawberry</td>
+           <td>-5%</td>
+           <td>1kg=23$</td>
+        </tr>
+         <tr>
+           <td>Watermelon</td>
+           <td>-8%</td>
+           <td>1kg=0.75$</td>
+        </tr>
+        <hr>
+        <h2>Make by AUB student</h2>
+        <style>   
+  
+  </style>
+  <style>
+   img {
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 200px;
+    height: 200px;  
+  }
+  </style>
+
+  <a href="https://www.aub.edu.kh" target="_blank">Acleda University student</a> <br>
+  <a href="https://www.aub.edu.kh" target="_self">Acleda University student</a>
+  <h2>Image as a Link</h2>
+   <img src="c:\Users\ASUS\Documents\AUB\fruit.jpg" alt="Nhork sreynit" width="104" height="142">
+  <a href="https://www.aub.edu.kh"><img src="aub.png" alt="NHORK SREYNIT" style="width:42px;height:42px;"></a>
+  <h2>Navigation Link</h2>
+  <a href="#section">Jump to section Id fresh fruit shop
+   <h1 id="section">Welcome to Fresh Fruit shop !!!</h1>
+  <p>this section for id = "section"</p>
+  </a>
+  <h1 style="color: red;">Link to Video review fruit in our shop </h1>
+  <video
+      width="640"
+      height="360"
+      poster="images.webp"
+      controls>
+      <source src="missyoulikecrazy.mp4" type="sreynit.mp4">
+  </video>
+  <h2>Fruit Images</h2>
+  
+  <img src="C:\Users\ASUS\Documents\AUB\imag fruit.jpg" alt="Nhork sreynit" style="width: 800px;height: 200px;"
+   <address>
+    Contact us at: <a href="fresh fruit shop168.com">info@fresh fruit shop168.com</a><br>
+    Location: 1397street, Anlungkngan, Khmounh, Sensok, Phnompenh
+    </table>
+   <h1>Happy together</h1>
+    <svg width="400" height="120">
+    <rect x="10" y="20" width="200" height="100" stroke="pink" stroke-width="6" fill="white" />
+    </svg>
+    <h1 style="background-color: khaki;">Avantages of fruits</h1>
+    <h2 style="color: rgb(14, 113, 115);">Rich in Essential Nutrients: Fruits are packed with key vitamins (C, A,) and essential minerals (K), which support overall bodily functions, immunity, and heart health.
+       High in Dietary Fiber: Fiber aids in healthy digestion, helps regulate blood sugar levels.</h2>
+      
+    <h2 style="background-color: lightgreen;">Happy: &hearts;</h2>
+    <h2 style="background-color: lightgreen;">Healthy: &hearts;</h2>
+    <h2 style="background-color: lightgreen;">Lovely: &hearts;</h2>
+
+    <h1 style="column-gap: normal ;">Good fruit Good health Good life</h1>
+
+    <h2>&#128509;</h2>
+    <h2>&#128508;</h2>
+    <h1 style="color: lawngreen;">Fresh Fruit Shop</h1>
+    <P style="color: rgb(58, 107, 8);">Thank you for support</P>
+    <h2>New</h2>
+   <text-alinge :center >
+<p>Fresh Fruit sourced from Cambodian orchards.</p>
+
+  <div>
+  <img src="C:\Users\ASUS\Documents\AUB\c.jpg" alt="Fruit" width="300" height="300">
+   Fresh hight quality fruit picked from orchards in BattamBong Kampot Mondulkiri Rattanakkiri Pursat Preyveng Kohkong Tboungkhmum Kampongthom Kampongspeu Kraches.
+  Pursat Orange has in Kravanh mountain, Durain has in Samlout District and in Memut district, for Strawberry and Blueberry have in Battambong.
+  For Pchom Ben festival, Fresh Fruit shop are offering discount to customer with fresh khmer fruits from the field directly in Mondulkiri province, good quality and health care. 
+  We love natural fruit, We support khmer product, We help Cambodian farmers secure income adg livelihoods. we will help cambodain market to grow, give value product forever and Encourage local farmers to engage in cultivation and export their produce abroad. </div>
+  
+  <h1> From Cambodia</h1>
+
+
+
+<h2>Pursat Orange </h2>
+<p class="ex1">
+  <span>Pursat</span>
+  <span>Battambong</span>
+  <span> Kohkong</span>
+  <span>Tboungkhmum</span>
+</p>
+
+<h2>Durain</h2>
+<p class="ex2">
+  <span>Kampot</span>
+  <span>Tboungkhmum</span>
+  <span>Mondulkiri</span>
+</p>
+
+<h2>Avocado</h2>
+<p class="ex3">
+  <span>Mondulkiri</span>
+  <span>Rattanakkiri</span>
+  <span>Rattanakkiri</span>
+</p>
+
+<h2>Banana</h2>
+<p class="ex4">
+  <span>Kampongthom</span>
+  <span>Kampongspeu</span>
+  <span>Kraches</span>
+</p>
+
+<h2>Jackfruit</h2>
+<p class="ex5">
+  <span>Kampongspeu</span>
+  <span>Tboungkhmum</span>
+  <span>Pursat</span>
+</p>
+
+<h2>Watermelon</h2>
+<p class="ex6">
+  <span>Preyveng</span>
+  <span>Tboungkhmum</span>
+  <span>Mondulkiri</span>
+</p>
+<style>
+p {
+  background-color: rgb(248, 103, 200);
+  padding: 10px;
+}
+
+span {
+  background-color: rgb(237, 176, 213);
+  color:rgb(232, 6, 134);
+  padding: 10px;
+}
+
+p.ex1 {display: none;}
+p.ex2 {display: inline;}
+p.ex3 {display: block;}
+p.ex4 {display: inline-block;}
+p.ex5 {display: flex;}
+p.ex6 {display: grid;}
+</style>
+<h1>Province in Cambodia</h1>
+<div style="background: rgb(249, 251, 249);">
+  <div class="city">
+      <h2>Kampong Cham</h2>
+      <p>Kampong Cham is one of provinces in Cambodia that has Banana, sweet jackfruit, Durain, Mango, Papaya, Pursat Orange.</p>
+      <p>Kampong Cham has many entertainment venue such as Phnombros Phnomstry, kohpen, teokcha, Kizuna Bridge</p>
+  </div>
+
+  <div class="city">
+    <h2>Kampot</h2>
+    <p>Kampot is the one of province in Cambodia that has best Durain, Pursat orange, phineapple.</p>
+    <p>Kampot has many enterainment venue such as Bukko, Teokchhu,  Green Cathedral, Phnomdong, Teokthlak Popokvel, Watsompovbram .</p>
+  </div>
+
+  <div class="city">
+    <h2>Siem Reap</h2>
+    <p>Siem Reap has many wild fruit and rich in khmer cakes such as Num Banhchok teok brahok, Brahok oang, Ahkou tnout,Kralan Nom BakBen.</p>
+    <p>Siem Reap is the most tourist attractive city of Cambodia such as Angkorwat temple, Phom kulen, PUB street, Neakpan temple, Neangpoun temple, Banteaysrey temple, Bayon temple. </p>
+  </div>
+</div>
+<hr>
+<div id="box"> Thanks for support.</div>
+ 
+ <hr>
+
+<h1>Avantages of fruit</h1>
+<div style="background: rgb(223, 162, 202);">
+  <div class="flexbox">
+      <h2>Avocado</h2>
+      <p>Help heart health, Nutrient-dense, High in fiber, Eye protection, Skin and anti-aging, Enhanced nutrient absorption.</p>
+      <p>Rich in monounsaturated. Packed with essential vitamin K, C, E, B6. Helps regulate blood suga levels. Contains powerful antioxidants. Help skin to healthy glow and body absorb fat. </p>
+  </div>
+
+  <div class="flexbox">
+    <h2>Apple</h2>
+    <p>Rich in Fiber: High in soluble fiber.
+   Heart Health: Regular consumption helps reduce the risk of stroke.
+   Packed with Antioxidants: Contains powerful antioxidants.
+   Immune System Support: Rich in Vitamin C.
+   </p>
+    <p>Weight Management: Low in calories and high in water and fiber.
+   Brain Health: Antioxidants in apples help protect brain cells.</p>
+  </div>
+
+  <div class="flexbox">
+    <h2>Banana</h2>
+    <p>High in Nutrients: Rich in essential vitamins like Vitamin C and Vitamin B6.
+Boosts Energy: Contains natural sugars (fructose, glucose, and sucrose) combined with fiber.
+Improves Digestion: High in dietary fiber.</p>
+    <p>
+Supports Heart Health: Excellent source of potassium.
+Aids in Weight Management: Low in calories yet filling and high in fiber, keeping you full for longer.
+Enhances Mood and Sleep: Contains tryptophan, an amino acid that the body converts into serotonin (the "happy" hormone) and melatonin (which helps regulate sleep).</p>
+  </div>
+  </text-alinge>
+  <h1>Color fruit has green yellow red and blue</h1>
+
+<p>This is color of fruit</p>
+
+<div id="Animation">This is color fruit</div>
+ <h1> Apple</h1>
+   <p>Color apple is red and green.</p>
+   <div id="hover">Hover</div>
+   <hr>
+   <h1>Banana</h1>
+   <p>Color Banana is yellow and green.</p>
+   <div id="cubic">Cubic</div>
+
+   <hr>
+   <h1>Orange</h1>
+   <p>Color Orange is orange, yellow and green.</p>
+
+
+   <div id="hover">Animation</div>
+   
+
+   <h1>Fruit is very good for health.</h1>
+
+   <div>
+   Rich in Fiber: High in soluble fiber.
+   </div>
+
+   <div id="myDiv">
+   Weight Management: Low in calories and high in water and fiber.
+   </div>
+
+
+   <h1 >High in Nutrients: Rich in essential vitamins like Vitamin C and Vitamin B6.</h1>
+
+   <div class="container">
+      <div class="box">rotateX(45deg)</div>
+   </div>
+
+
+
+</body>
